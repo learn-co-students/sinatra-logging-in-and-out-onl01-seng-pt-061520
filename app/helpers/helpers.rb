@@ -1,6 +1,8 @@
+require 'pry'
 class Helpers
   
     def self.current_user(session_hash)
+        #binding.pry
       @user = User.find(session_hash[:user_id])
     end 
     
